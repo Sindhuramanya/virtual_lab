@@ -1,0 +1,256 @@
+{
+  "window": {
+    "title": "VIRTUAL-LAB",
+    "geometry": "1100x580",
+    "title_bar_color": "blue"
+  },
+  "widgets": [
+    {
+      "type": "button",
+      "text": "POT",
+      "row": 1,
+      "column": 0,
+      "padx": 20,
+      "pady": 10,
+      "command": "sidebar_button_event",
+      "bg": "green", 
+      "fg": "black"
+    },
+    {
+      "type": "button",
+      "text": "SWITCH",
+      "row": 2,
+      "column": 0,
+      "padx": 20,
+      "pady": 10,
+      "command": "sidebar_button_event",
+      "bg": "green",
+      "fg": "black"
+    },
+    {
+      "type": "button",
+      "text": "LED",
+      "row": 3,
+      "column": 0,
+      "padx": 20,
+      "pady": 10,
+      "command": "sidebar_button_event",
+      "bg": "green",
+      "fg": "black"
+    },
+    {
+      "type": "button",
+      "text": "MOTOR",
+      "row": 4,
+      "column": 0,
+      "padx": 20,
+      "pady": 10,
+      "command": "sidebar_button_event",
+      "bg": "green",
+      "fg": "black",
+      "font": "bold"
+    },
+    {
+      "type": "button",
+      "text": "GRAPH",
+      "row": 5,
+      "column": 0,
+      "padx": 20,
+      "pady": 10,
+      "command": "sidebar_button_event",
+      "bg": "green",
+      "fg": "black",
+      "font": "bold"
+    },
+    {
+      "type": "button",
+      "text": "KNOB",
+      "row": 6,
+      "column": 0,
+      "padx": 20,
+      "pady": 10,
+      "command": "sidebar_button_event",
+      "bg": "green",
+      "fg": "black",
+      "font": "bold"
+    },
+    
+    {
+      "type": "CTkButton",
+      "text": "Segment Button 1",
+      "row": 0,
+      "column": 1,
+      "padx": 20, 
+      "pady": 10, 
+      "sticky": "ew"
+    },
+    {
+      "type": "CTkProgressBar",
+      "parent": "slider_progressbar_frame",
+      "row": 1,
+      "column": 1,
+      "padx": 20, 
+      "pady": 10,
+      "sticky": "ew",
+      "bg_color": "green"
+    },
+    {
+      "type": "CTkProgressBar",
+      "parent": "slider_progressbar_frame",
+      "row": 2,
+      "column": 1,
+      "padx": 20, 
+      "pady": 10, 
+      "sticky": "ew"
+    },
+    {
+      "type": "CTkSlider",
+      "parent": "slider_progressbar_frame",
+      "from": 0,
+      "to": 1,
+      "number_of_steps": 4,
+      "row": 3,
+      "column": 1,
+      "padx": 20,
+      "pady": 10, 
+      "sticky": "ew"
+    },
+    {
+      "type": "CTkSwitch",
+      "text": "SWITCH 0",
+      "row": 4,
+      "column": 1,
+      "padx": 10,
+      "pady": [0, 20]
+    },
+    {
+      "type": "CTkSwitch",
+      "text": "SWITCH 1",
+      "row": 5,
+      "column": 1,
+      "padx": 10,
+      "pady": [0, 20]
+    },
+    {
+      "type": "CTkSwitch",
+      "text": "SWITCH 2",
+      "row": 6,
+      "column": 1,
+      "padx": 10,
+      "pady": [0, 20]
+    },
+    {
+      "type": "frame",
+      "name": "radiobutton_frame",
+      "row": 0,
+      "column": 2,
+      "padx": 20,
+      "pady": 20, 
+      "sticky": "nsew",
+      "children": [
+        {
+          "type": "label",
+          "name": "label_radio_group",
+          "text": "LED",
+          "row": 0,
+          "column": 2,
+          "columnspan": 1,
+          "padx": 10,
+          "pady": 10,
+          "sticky": ""
+        },
+        {
+          "type": "radio_button",
+          "name": "radio_button_1",
+          "variable": "radio_var",
+          "value": 0,
+          "text": "ON/OFF",
+          "row": 1,
+          "column": 2,
+          "pady": 10,
+          "padx": 20,
+          "sticky": "n"
+        },
+        {
+          "type": "radio_button",
+          "name": "radio_button_2",
+          "variable": "radio_var",
+          "value": 1,
+          "text": "ON/OFF",
+          "row": 2,
+          "column": 2,
+          "pady": 10,
+          "padx": 20,
+          "sticky": "n"
+        },
+        {
+          "type": "radio_button",
+          "name": "radio_button_3",
+          "variable": "radio_var",
+          "value": 2,
+          "text": "ON/OFF",
+          "row": 3,
+          "column": 2,
+          "pady": 10,
+          "padx": 20,
+          "sticky": "n"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "text": "MOTOR 1",
+      "row": 4,
+      "column": 2,
+      "padx": 40,
+      "pady": 20,
+      "variable": "motor1_variable",
+      "font": "bold"
+    },
+    {
+      "type": "checkbox",
+      "text": "MOTOR 2",
+      "row": 5,
+      "column": 2,
+      "padx": 40,
+      "pady": 20,
+      "variable": "motor2_variable",
+      "font": "bold"
+    },
+    {
+      "type": "checkbox",
+      "text": "MOTOR 3",
+      "row": 6,
+      "column": 2,
+      "padx": 40,
+      "pady": 20,
+      "variable": "motor3_variable",
+      "font": "bold"
+    },
+    {
+      "type": "RotatingKnobWithNumbers",
+      "angle": 0,
+      "value": 0,
+      "numbers": 10,
+      "row": 4,
+      "column": 3,
+      "padx": 10,
+      "pady": 10
+    } 
+  ],
+  
+    "figure": {
+      "figsize": [3, 2],
+      "dpi": 100
+     
+    },
+    "axes": {
+      "xlim": [0, 10],
+      "ylim": [-1, 1]
+    }
+  }
+    
+  
+  
+
+
